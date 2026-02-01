@@ -126,13 +126,11 @@ Made a mistake? Remove files from staging:
 
 ```bash
 # Unstage a specific file
-git restore --staged filename.txt
+git rm --cached filename.txt
 
 # Unstage all files
-git restore --staged .
+git rm --cached . -r
 
-# Old method (still works)
-git reset HEAD filename.txt
 ```
 
 ## Making Commits
